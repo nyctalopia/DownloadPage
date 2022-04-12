@@ -73,6 +73,7 @@ function draw () {
 var OSName="Unknown OS";
 if (navigator.appVersion.indexOf("Win")!==-1) OSName="Windows";
 if (navigator.appVersion.indexOf("Linux")!==-1) OSName="Linux";
+if (navigator.appVersion.indexOf("X11")!==-1) OSName="Linux";
 
 $(function() {
   if (OSName === 'Windows') {
