@@ -68,7 +68,7 @@
     font-weight: 600;
   }
   
-  .overlay {
+  .overlaybis {
     width: 100%;
     max-width: 1140px;
     max-height: 640px;
@@ -164,7 +164,7 @@
   }
   
   @media only screen and (max-width: 1140px) {
-    .overlay {
+    .overlaybis {
       padding: 8rem 4rem;
     }
   }
@@ -174,7 +174,7 @@
       padding: 1.5rem;
     }
   
-    .overlay {
+    .overlaybis {
       padding: 4rem;
       height: auto;
     }
@@ -193,7 +193,7 @@
   }
   
   @media only screen and (max-width: 600px) {
-    .overlay {
+    .overlaybis {
       padding: 1.5rem;
     }
   
@@ -211,4 +211,48 @@
       margin-bottom: 1rem;
     }
   }
-  
+
+  .overlayone {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+  }
+  .overlayone:target {
+    visibility: visible;
+    opacity: 1;
+  }
+ .popup {
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: top;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}

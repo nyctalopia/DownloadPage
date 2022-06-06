@@ -12,7 +12,7 @@
 
 <canvas class="orb-canvas"></canvas>
 <!-- Overlay -->
-<div class="overlay">
+<div class="overlaybis">
   <!-- Overlay inner wrapper -->
   <div class="overlay__inner">
     <!-- Title -->
@@ -21,7 +21,7 @@
     </h1>
     <!-- Description -->
     <p class="overlay__description">
-      Veuillez choisir comment vous voulez télécharger Nyctalopia. Installer via Steam nécessite un compte Steam.
+      Veuillez choisir comment vous voulez télécharger Nyctalopia. <br> Installer via Steam nécessite un compte Steam.
     </p>
     <!-- Buttons -->
     <div class="overlay__btns">
@@ -39,7 +39,7 @@
         </a>
       </button>
       <button class="overlay__btn overlay__btn--colors linux">
-        <a href="https://get.nyctalopia.games/linux" target="_blank">
+        <a href="#popup">
           <span>Download for Linux</span>
           <span class="overlay__btn-emoji">🐧</span>
       </a>
@@ -52,6 +52,17 @@
   </div>
 </div>
 
+<div id="popup" class="overlayone">
+	<div class="popup">
+    <a class="close" href="#">&times;</a>
+    <br>
+		<div class="content">
+			<p>Collez cette commande dans votre terminal préféré et suivez les instructions. <br> 
+        (Nécessite un compte administrateur, aka sudoer) <br> <br> 
+        wget -qO- https://get.nyctalopia.games/linux > /tmp/nyctalopia.sh && bash /tmp/nyctalopia.sh</p>
+		</div>
+	</div>
+</div>
 
 <svg viewBox="0 0 1081.45 603.34" preserveAspectRatio="xMinYMin slice">
     <defs>
